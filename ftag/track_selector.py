@@ -9,6 +9,7 @@ from ftag.cuts import Cut, Cuts
 
 @dataclass
 class TrackSelector:
+    print("Go into TrackSelector") #(AB)
     """
     Apply track selections to a set of tracks stored in a structured numpy array.
 
@@ -39,6 +40,7 @@ class TrackSelector:
 
         # set the values of the tracks that do not pass the cuts to
         for var in tracks.dtype.names:
+            print("names : " + var) #(AB)
             if issubclass(tracks[var].dtype.type, np.floating):
                 tracks[var][rm_idx] = np.nan
             elif issubclass(tracks[var].dtype.type, np.signedinteger):

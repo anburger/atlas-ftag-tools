@@ -353,3 +353,24 @@
   cuts: ["n_truth_higgs == 0", "n_truth_top == 0"]
   colour: "#38761D"
   category: trigger-xbb
+#for WZ
+- name: W0Z0
+  label: W0Z0
+  cuts: ["dibosonPol == 0"]
+  colour: tab:blue
+  category: dibosonPol
+- name: W0ZT
+  label: W0ZT
+  cuts: ["dibosonPol == 1"]
+  colour: salmon
+  category: dibosonPol
+- name: WTZ0
+  label: WTZ0
+  cuts: ["dibosonPol == 2"]
+  colour: tab:orange
+  category: dibosonPol
+- name: WTZT
+  label: WTZT
+  cuts: ["dibosonPol == 3"]
+  colour: aqua
+  category: dibosonPol
